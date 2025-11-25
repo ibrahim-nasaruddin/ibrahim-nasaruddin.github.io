@@ -1,45 +1,31 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+repository: ibrahim-nasaruddin.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: Ibrahim Nasaruddin
+title: MSc Sport Analytics Student & Performance Analyst
+email: mibrahim.nsrdn@gmail.com
 # email_title: Email (Email title override)
-phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
+website: https://www.linkedin.com/in/ibrahimnas
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+twitter_username: @ibranalytics
+github_username:  ibrahim-nasaruddin
+instagram_username: @ibrahcadabruh
+linkedin_username: Ibrahim Bin Nasaruddin
 
 # Additional icon links
 additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+# - title: Link name
+#   icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
 
 # Google Analytics and Tag Manager
@@ -50,66 +36,95 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+about_profile_image: images/profile.jpg # REPLACE WITH YOUR IMAGE PATH
+about_content: | 
+  I am a locum Performance Analyst Assistant at the High Performance Sport Institute in Singapore, and also a Master of Sport Analytics student at La Trobe University in Australia. With a strong foundation in Sport Science [BSc (Honours) from NTU], I enjoy contributing towards data-driven decision making to optimise athletic performance and enhance analytical workflow processes.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  My technical expertise centres on using **R** (tidyverse, ggplot2) for data cleaning, visualisation, and predictive modelling. I am interested in applying machine learning concepts—such as Random Forests and XGBoost—to sports data, and recently looking into computer vision to aid in notational analyses. 
+
+  My current focus areas include:
+    - **Football Analytics:** Analysing tactical trends and player stats in the Singapore Premier League.
+    - **Performance Science:** Supporting elite athletes in Athletics, Badminton, and Water Polo through video or data analysis.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+      # No projects listed currently. 
+      # You can add items here following the 'layout: left' structure from the previous version.
+
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        title: High Performance Sport Institute
+        sub_title: Performance Analyst Assistant
+        caption: Nov 2025 - Present
         quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
+          Supporting elite athletes in Athletics, Badminton, and Water Polo.
+        description: |
+          Reporting to the Sport Performance Analyst to provide analytical support. Tasked with supporting athletics events via remote analysis for the upcoming SEA Games 2025.
+      - layout: right
+        title: National University of Singapore
+        sub_title: Research Assistant (Exercise Science)
+        caption: Oct 2023 - Present
+        quote: >
+          Healthy Longevity Translational Research Program.
+        description: |
+          Conducting and interpreting participant tests including VO2max and anthropometric measurements. Performing routine clinical assessments according to Standard Operating Procedures.
+      - layout: right
+        title: United World College South East Asia
+        sub_title: Health & Performance Coach (Freelance)
+        caption: Sep 2023 - Present
+        description: |
+          Planning and delivering speed conditioning programmes for middle-school athletes and performing evidence-based pre-post speed assessments.
+      - layout: right
+        title: Sport Singapore
+        sub_title: Health Coach / Planning & Research Executive
+        caption: Jul 2021 - Jul 2023
+        description: |
+          Led the "Learning Exercises Against Diabetes" research study and compiled data using Tableau to support operational decision-making. Assisted in the "Health District @ Queenstown" collaboration project.
+      - layout: right
+        title: Home Team Science and Technology Agency
+        sub_title: Research Intern
+        caption: Jan 2021 - Jul 2021
+        description: |
+          Analysed and visualised data for human factors and simulation trials. Examined physical and physiological demands of frontline specialist vocations to enhance operational readiness.
+
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: La Trobe University
+        sub_title: Master of Sport Analytics
+        caption: 2025 - 2026 (Expected)
         quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          Awarded the LTU High Achiever Scholarship.
+      - layout: top-right
+        title: Nanyang Technological University
+        sub_title: BSc (Sport Science and Management)
+        caption: 2018 - 2021
+        quote: >
+          Honours (Distinction). NTU President Research Scholar 2020.
+        description: |
+          Specialisation in Sport Science. Received the Undergraduate Research Excellence (Distinction) Award 2020.
+      - layout: top-right
+        title: Republic Polytechnic
+        sub_title: Diploma in Sport and Exercise Sciences
+        caption: 2016 - 2018
+        quote: >
+          Diploma with Merit.
+        description: |
+          Director's Roll of Honours (2017-2018).
+
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+    content: |
+      **Technical Skills**
+      I rely heavily on the **R Programming Language** for my daily analysis, specifically the `tidyverse` suite for data manipulation and visualisation. I also had previous experience with **Tableau** for dashboarding and **SPSS/JASP** for statistical testing. I am currently expanding my skillset in Machine Learning algorithms to better predict sporting outcomes.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      **Interests**
+      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. And of course, I strive to keep fit & healthy!
 
 # Footer
 footer_show_references: true
@@ -117,7 +132,7 @@ footer_show_references: true
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+remote_theme: sproogen/modern-resume-theme #(Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass

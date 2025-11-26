@@ -47,29 +47,39 @@ about_content: |
     - **Performance Science:** Supporting elite athletes in Athletics, Badminton, and Water Polo through video or data analysis.
 
 content:
-  - title: Projects
+  - title: Articles
     layout: list
     content:
-      # No projects listed currently. 
-      # You can add items here following the 'layout: left' structure from the previous version.
-
-  - title: Experience
+    - layout: left
+      title: Predictive Modelling with Machine Learning in Sport Analytics
+      sub_title: A step-by-step approach for beginners
+      caption: November 2025
+      link: https://rpubs.com/mibrahim_nsrdn/1362119
+      link_text: View on RPubs
+      description: |
+        Comprehensive guide covering the fundamentals of predictive modeling and machine learning in sports analytics. Explores data preparation, model building, hyperparameter tuning, and interpretation using R programming.
+    - layout: left
+      title: Predicting Expected Threat (xT) with Random Forest Regression in R
+      sub_title: A Beginner's Guide to Sports Analytics
+      caption: October 2025
+      link: https://rpubs.com/mibrahim_nsrdn/1362155
+      link_text: View on RPubs
+      description: |
+        Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.  
+    
+    - title: Experience
     layout: list
     content:
       - layout: right
         title: High Performance Sport Institute
         sub_title: Performance Analyst Assistant
         caption: Nov 2025 - Present
-        quote: >
-          Supporting elite athletes in Athletics, Badminton, and Water Polo.
         description: |
           Reporting to the Sport Performance Analyst to provide analytical support. Tasked with supporting athletics events via remote analysis for the upcoming SEA Games 2025.
       - layout: right
         title: National University of Singapore
         sub_title: Research Assistant (Exercise Science)
         caption: Oct 2023 - Present
-        quote: >
-          Healthy Longevity Translational Research Program.
         description: |
           Conducting and interpreting participant tests including VO2max and anthropometric measurements. Performing routine clinical assessments according to Standard Operating Procedures.
       - layout: right
@@ -98,13 +108,13 @@ content:
         title: La Trobe University
         sub_title: Master of Sport Analytics
         caption: 2025 - 2026 (Expected)
-        quote: >
+        description: |
           Awarded the LTU High Achiever Scholarship.
       - layout: top-right
         title: Nanyang Technological University
         sub_title: BSc (Sport Science and Management)
         caption: 2018 - 2021
-        quote: >
+        description: |
           Honours (Distinction). NTU President Research Scholar 2020.
         description: |
           Specialisation in Sport Science. Received the Undergraduate Research Excellence (Distinction) Award 2020.
@@ -112,7 +122,7 @@ content:
         title: Republic Polytechnic
         sub_title: Diploma in Sport and Exercise Sciences
         caption: 2016 - 2018
-        quote: >
+        description: |
           Diploma with Merit.
         description: |
           Director's Roll of Honours (2017-2018).

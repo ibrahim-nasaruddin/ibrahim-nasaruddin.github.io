@@ -1,6 +1,6 @@
 # Site
 repository: ibrahim-nasaruddin.github.io
-favicon: images/IMG_5417.jpeg
+favicon: images/favicon-16x16.png
 
 # Content configuration version
 version: 2
@@ -36,7 +36,7 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/profile.jpg # REPLACE WITH YOUR IMAGE PATH
+about_profile_image: images/IMG_1718.jpeg
 about_content: | 
   I am a locum Performance Analyst Assistant at the High Performance Sport Institute in Singapore, and also a Master of Sport Analytics student at La Trobe University in Australia. With a strong foundation in Sport Science [BSc (Honours) from NTU], I enjoy contributing towards data-driven decision making to optimise athletic performance and enhance analytical workflow processes.
 

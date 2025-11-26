@@ -55,15 +55,14 @@ content:
       sub_title: A step-by-step approach for beginners
       caption: November 2025
       link: https://rpubs.com/mibrahim_nsrdn/1362119
-      link_text: View on RPubs
+      link_text: View on RPubs : https://rpubs.com/mibrahim_nsrdn/1362119
       description: |
         Comprehensive guide covering the fundamentals of predictive modeling and machine learning in sports analytics. Explores data preparation, model building, hyperparameter tuning, and interpretation using R programming.
     - layout: left
       title: Predicting Expected Threat (xT) with Random Forest Regression in R
-      sub_title: A Beginner's Guide to Sports Analytics
       caption: October 2025
       link: https://rpubs.com/mibrahim_nsrdn/1362155
-      link_text: View on RPubs
+      link_text: View on RPubs : https://rpubs.com/mibrahim_nsrdn/1362155
       description: |
         Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.  
     

@@ -67,7 +67,7 @@ content:
       description: |
         Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.  
     
-    - title: Experience
+  - title: Experience
     layout: list
     content:
       - layout: right

@@ -70,12 +70,15 @@ content:
       caption: July 2025
       link: https://substack.com/home/post/p-168133278
       link_text: "View on Substack: https://substack.com/home/post/p-168133278"
+      description: |
+        Explores how Apple Watch estimates heart rate zones and why they may not reflect individual physiology. Discusses Zone 5 training (VO₂max intensity), the second ventilatory threshold (VT2), and provides a practical field-based Maximal Aerobic Speed (MAS) test protocol to manually calibrate accurate HR zones for more effective cardio training.
     - layout: left
-      title: Jun 2025
-      caption: Best Defender for SPL 2024/25 (Part 1)
+      title: Best Defender for SPL 2024/25 (Part 1)
+      caption: Jun 2025
       link: https://substack.com/home/post/p-166051519
       link_text: "View on Substack: https://substack.com/home/post/p-166051519"
-
+      description: |
+        Data-driven analysis of defensive performance in the Singapore Premier League's 2024/25 season. Examines SPL defenders through objective metrics including duel success rates, clearances, and errors leading to shots. Uses statistical analysis to identify standout performers like Toni Datković and Bailey Wright, while highlighting the importance of tactical context when evaluating defensive contributions.
     
   - title: Experience
     layout: list

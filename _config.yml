@@ -79,21 +79,35 @@ content:
       - layout: right
         title: National University of Singapore
         sub_title: Research Assistant (Exercise Science)
-        caption: Oct 2023 - Present
+        caption: Oct 2023 - Jan 2025
         description: |
           Conducting and interpreting participant tests including VO2max and anthropometric measurements. Performing routine clinical assessments according to Standard Operating Procedures.
       - layout: right
+        title: MaxForm Pte Ltd
+        sub_title: Speed Coach (Freelance)
+        caption: Oct 2023 - Dec 2024
+        description: |
+          Planning and delivering speed conditioning programmes for youth athletes.
+      - layout: right
         title: United World College South East Asia
         sub_title: Health & Performance Coach (Freelance)
-        caption: Sep 2023 - Present
+        caption: Sep 2023 - Jul 2024
         description: |
           Planning and delivering speed conditioning programmes for middle-school athletes and performing evidence-based pre-post speed assessments.
       - layout: right
         title: Sport Singapore
-        sub_title: Health Coach / Planning & Research Executive
+        sub_title: Health Coach (Active Health division)
         caption: Jul 2021 - Jul 2023
         description: |
-          Led the "Learning Exercises Against Diabetes" research study and compiled data using Tableau to support operational decision-making. Assisted in the "Health District @ Queenstown" collaboration project.
+          Coached a wide variety of participants by conducting fitness and health assessments, exercise programmes for working adults, seniors and people with chronic diseases. 1st runner-up team for an MCCY Data Arcade Tournament 2022, using Tableau to visualise data and problem-solve possible solutions for gaps specific to Sport Singapore.
+
+
+      - layout: right
+        title: Sport Singapore
+        sub_title: Planning & Research Executive (Active Health division)
+        caption: Jul 2021 - Jul 2023
+        description: |
+          Led the "Learning Exercises Against Diabetes" research study and compiled data using Tableau to support operational decision-making. Assisted in the "Health District @ Queenstown" collaboration project, specifically the "Active Health Fitness Trail" in Mei Ling St.
       - layout: right
         title: Home Team Science and Technology Agency
         sub_title: Research Intern

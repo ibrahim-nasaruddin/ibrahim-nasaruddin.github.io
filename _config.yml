@@ -38,13 +38,13 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/IMG_1718.jpeg
 about_content: | 
-  I am a Performance Analyst (part-time) at the High Performance Sport Institute in Singapore, and also a Master of Sport Analytics student at La Trobe University in Australia. I have a strong background in sport science and have had working experiences as a health coach and youth strength & conditioning coach. I enjoy contributing towards data-driven decision making to optimise athletic performance and enhance analytical workflow processes.
+  Hi there! I'm Ibrahim. I am currently a Performance Analyst (part-time) at the High Performance Sport Institute in Singapore, as well as a Master of Sport Analytics student at La Trobe University in Australia.
 
-  My technical expertise centres on using **R** (tidyverse, ggplot2) for data cleaning, visualisation, and predictive modelling. I am interested in applying machine learning concepts (such as Random Forests and XGBoost) to sports data, and recently looking into computer vision to aid in notational analyses. 
-
+  I created this page to showcase my projects and technical growth. Coming from a background in Sport Science with experience in health coaching and youth strength & conditioning, I have always loved the challenge of optimising athletic performance. I enjoy piecing together the 'human performance puzzle' to find individualised solutions. Through this work, I realised I relished the process of data visualisation and the power of a data-driven approach to refine decision-making and analytical workflows.
+  
   My current areas of interest include:
     - **Performance Science:** Supporting elite athletes in various sports (including Athletics, Water Polo, Badminton) through video or data analysis.
-    - **Enhancing workflow processes** Identifying areas to optimise workflow processes and finding tech-aided solutions that improves productivity. 
+    - **Enhancing workflow processes** Identifying bottlenecks in workflow processes and implementing tech-aided solutions that improve productivity. 
 
 content:
   - title: Articles

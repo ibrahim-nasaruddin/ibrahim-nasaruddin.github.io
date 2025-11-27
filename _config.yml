@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Ibrahim Nasaruddin
-title: MSc Sport Analytics Student || Performance Analyst (locum)
+title: MSc Sport Analytics Student || Sports Performance Analyst (part-time)
 email: mibrahim.nsrdn@gmail.com
 # email_title: Email (Email title override)
 website: https://www.linkedin.com/in/ibrahimnas
@@ -38,13 +38,14 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/IMG_1718.jpeg
 about_content: | 
-  I am a locum Performance Analyst Assistant at the High Performance Sport Institute in Singapore, and also a Master of Sport Analytics student at La Trobe University in Australia. With a strong foundation in Sport Science [BSc (Honours) from NTU], I enjoy contributing towards data-driven decision making to optimise athletic performance and enhance analytical workflow processes.
+  I am a Performance Analyst (part-time) at the High Performance Sport Institute in Singapore, and also a Master of Sport Analytics student at La Trobe University in Australia. I have a strong background in sport science and have had working experiences as a health coach and youth strength & conditioning coach. I enjoy contributing towards data-driven decision making to optimise athletic performance and enhance analytical workflow processes.
 
-  My technical expertise centres on using **R** (tidyverse, ggplot2) for data cleaning, visualisation, and predictive modelling. I am interested in applying machine learning concepts—such as Random Forests and XGBoost—to sports data, and recently looking into computer vision to aid in notational analyses. 
+  My technical expertise centres on using **R** (tidyverse, ggplot2) for data cleaning, visualisation, and predictive modelling. I am interested in applying machine learning concepts (such as Random Forests and XGBoost) to sports data, and recently looking into computer vision to aid in notational analyses. 
 
-  My current focus areas include:
-    - **Football Analytics:** Analysing tactical trends and player stats in the Singapore Premier League.
+  My current areas of interest include:
+    - **Football Analytics:** Visualising team & player stats in the Singapore Premier League.
     - **Performance Science:** Supporting elite athletes in Athletics, Badminton, and Water Polo through video or data analysis.
+    - **Enhancing workflow processes** Identifying areas to optimise workflow processes and finding tech-aided solutions that improves productivity. 
 
 content:
   - title: Articles
@@ -124,16 +125,16 @@ content:
         description: |
           Diploma with Merit.
         description: |
-          Director's Roll of Honours (2017-2018).
+          Director's Roll of Honours (2017-2018). Module Prize in Introduction to Sports Coaching. Nominee for RP DSES valedictorian 2018 and RP Most Outstanding Graduate 2018.
 
   - title: A Little More About Me
     layout: text
     content: |
       **Technical Skills**
-      I rely heavily on the **R Programming Language** for my daily analysis, specifically the `tidyverse` suite for data manipulation and visualisation. I also had previous experience with **Tableau** for dashboarding and **SPSS/JASP** for statistical testing. I am currently expanding my skillset in Machine Learning algorithms to better predict sporting outcomes.
+      I rely heavily on the **R Programming Language** for my daily analysis. I also had previous experience with **Tableau** and **R Shiny** for dashboarding and **SPSS/JASP** for statistical testing. I am currently expanding my skillset in Machine Learning algorithms to better predict sporting outcomes and also learning MS Power BI as an alternative dashboarding tool.
 
       **Interests**
-      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. And of course, I strive to keep fit & healthy!
+      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. I love my time with my family and feel at peace during nature walks. And of course, I strive to keep fit & healthy!
 
 # Footer
 footer_show_references: true

@@ -43,8 +43,7 @@ about_content: |
   My technical expertise centres on using **R** (tidyverse, ggplot2) for data cleaning, visualisation, and predictive modelling. I am interested in applying machine learning concepts (such as Random Forests and XGBoost) to sports data, and recently looking into computer vision to aid in notational analyses. 
 
   My current areas of interest include:
-    - **Football Analytics:** Visualising team & player stats in the Singapore Premier League.
-    - **Performance Science:** Supporting elite athletes in Athletics, Badminton, and Water Polo through video or data analysis.
+    - **Performance Science:** Supporting elite athletes in various sports (including Athletics, Water Polo, Badminton) through video or data analysis.
     - **Enhancing workflow processes** Identifying areas to optimise workflow processes and finding tech-aided solutions that improves productivity. 
 
 content:
@@ -142,11 +141,11 @@ content:
   - title: A Little More About Me
     layout: text
     content: |
-      **Technical Skills**
+      **Technical Skills: **
       I rely heavily on the **R Programming Language** for my daily analysis. I also had previous experience with **Tableau** and **R Shiny** for dashboarding and **SPSS/JASP** for statistical testing. I am currently expanding my skillset in Machine Learning algorithms to better predict sporting outcomes and also learning MS Power BI as an alternative dashboarding tool.
 
-      **Interests**
-      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. I love my time with my family and feel at peace during nature walks. And of course, I strive to keep fit & healthy!
+      **Interests: **
+      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. I occasionally post visualisation plots of team/player stats of the Singapore Premier League on my X account when time permits. I love my time with my family and feel at peace during nature walks. And of course, I strive to keep fit & healthy!
 
 # Footer
 footer_show_references: true

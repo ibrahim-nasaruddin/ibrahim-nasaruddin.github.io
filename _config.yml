@@ -57,6 +57,7 @@ content:
       link: https://rpubs.com/mibrahim_nsrdn/1362119
       link_text: "View on RPubs : https://rpubs.com/mibrahim_nsrdn/1362119"
       description: |
+        <img src="images/model_diagnostics_article.png" alt="Model Diagnostics for Regression Analysis" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
         Comprehensive guide covering the fundamentals of predictive modeling and machine learning in sports analytics. Explores data preparation, model building, hyperparameter tuning, and interpretation using R programming.
     - layout: left
       title: Predicting Expected Threat (xT) with Random Forest Regression in R
@@ -64,6 +65,7 @@ content:
       link: https://rpubs.com/mibrahim_nsrdn/1362155
       link_text: "View on RPubs : https://rpubs.com/mibrahim_nsrdn/1362155"
       description: |
+        <img src="images/actual_vs_predicted_xT_article.png" alt="Actual vs Predicted xT values" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
         Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.
     - layout: left
       title: Is Your Apple Watch Calculating the Right Heart Rate Zones for Your Cardio Workouts?

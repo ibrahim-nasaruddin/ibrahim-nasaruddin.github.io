@@ -64,7 +64,18 @@ content:
       link: https://rpubs.com/mibrahim_nsrdn/1362155
       link_text: "View on RPubs : https://rpubs.com/mibrahim_nsrdn/1362155"
       description: |
-        Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.  
+        Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.
+    - layout: left
+      title: Is Your Apple Watch Calculating the Right Heart Rate Zones for Your Cardio Workouts?
+      caption: July 2025
+      link: https://substack.com/home/post/p-168133278
+      link_text: "View on Substack: https://substack.com/home/post/p-168133278"
+    - layout: left
+      title: Jun 2025
+      caption: Best Defender for SPL 2024/25 (Part 1)
+      link: https://substack.com/home/post/p-166051519
+      link_text: "View on Substack: https://substack.com/home/post/p-166051519"
+
     
   - title: Experience
     layout: list

@@ -47,7 +47,8 @@ about_content: |
     - **Enhancing workflow processes** Identifying bottlenecks in workflow processes and implementing tech-aided solutions that improve productivity. 
 
 content:
-  - title: Articles
+  - title: Portfolio
+    subtitle: Videos & Articles
     layout: list
     content:
     - layout: left

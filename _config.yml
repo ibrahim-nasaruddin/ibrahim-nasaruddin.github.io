@@ -51,7 +51,8 @@ content:
     layout: list
     content:
     - layout: left
-      title: Video Demo Project
+      title: Performance Analysis with HPSI
+      subtitle: For Singapore Athletics' track athletes
       caption: December 2025
       link: https://youtu.be/OKdqbm_Fif0
       link_text: "Watch on YouTube"
@@ -64,8 +65,7 @@ content:
                   style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
           </iframe>
         </div>
-        
-        Add your description here about what this video demonstrates. You can use **bold text**, *italics*, and include bullet points if needed.
+        A behind-the-scenes look at my work as a Performance Analyst Assistant at the High Performance Sport Institute (HPSI), where I support Singapore's national athletes in athletics leading up to the SEA Games 2025. Also have a listen by the athletes on how they feel analytics supports them!
     - layout: left
       title: Predictive Modelling with Machine Learning in Sport Analytics
       sub_title: A step-by-step approach for beginners

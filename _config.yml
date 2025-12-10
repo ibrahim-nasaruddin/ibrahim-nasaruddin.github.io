@@ -52,6 +52,24 @@ content:
     layout: list
     content:
     - layout: left
+      title: Netball Performance Dashboard (R Shiny)
+      subtitle: Automated Match Reporting Tool
+      caption: December 2025
+      link: https://8k17oa-ibrahim0bin0nasaruddin.shinyapps.io/Netball-Performance-Dashboard/
+      link_text: "Open Full Screen"
+      description: |
+        <div style="position:relative;padding-bottom:85%;height:0;overflow:hidden;margin-bottom:15px;border:1px solid #ddd;border-radius:5px;">
+          <iframe src="https://8k17oa-ibrahim0bin0nasaruddin.shinyapps.io/Netball-Performance-Dashboard/"
+                  title="Netball Dashboard"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
+          </iframe>
+        </div>
+        **Tech Stack:** R, Shiny, ggplot2, dplyr.
+        <br>
+        An interactive production-grade dashboard designed for High Performance Sport Institute (HPSI) netball analysis. It automates the ingestion of Hudl Sportscode data to visualize pass networks, momentum swings, and defensive KPIs.
+        <br><br>
+        <a href="https://github.com/ibrahim-nasaruddin/netball-performance-dashboard" target="_blank">View Source Code on GitHub</a>
+    - layout: left
       title: Performance Analysis with HPSI
       subtitle: For Singapore Athletics' track athletes
       caption: December 2025

@@ -66,7 +66,9 @@ content:
         </div>
         **Tech Stack:** R, Shiny, ggplot2, dplyr.
         <br>
-        An interactive production-grade dashboard inspired by the work I did for High Performance Sport Institute (HPSI) netball analysis. It automates the live notational analysis from Hudl Sportscode data to visualise pass networks, momentum swings, and other KPIs into a dashboard.
+        A production-grade dashboard inspired by my work with the High Performance Sport Institute (HPSI). I designed this tool to explore and streamline the analysis workflow, automating the ingestion of Hudl Sportscode data to move beyond manual reporting.
+        <br><br>
+        By shifting the focus from data entry to tactical exploration, it empowers analysts to prioritize coaching conversations. Key features include dynamic pass networks, momentum tracking, and defensive KPI visualisation.
         <br><br>
         <a href="https://github.com/ibrahim-nasaruddin/netball-performance-dashboard" target="_blank">View Source Code on GitHub</a>
     - layout: left

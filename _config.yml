@@ -53,7 +53,7 @@ content:
     content:
     - layout: left
       title: Netball Performance Dashboard (R Shiny)
-      subtitle: Automated Match Reporting Tool
+      subtitle: Automated Post-Match Reporting Tool
       caption: December 2025
       link: https://8k17oa-ibrahim0bin0nasaruddin.shinyapps.io/Netball-Performance-Dashboard/
       link_text: "Open Full Screen"
@@ -66,7 +66,7 @@ content:
         </div>
         **Tech Stack:** R, Shiny, ggplot2, dplyr.
         <br>
-        An interactive production-grade dashboard designed for High Performance Sport Institute (HPSI) netball analysis. It automates the ingestion of Hudl Sportscode data to visualize pass networks, momentum swings, and defensive KPIs.
+        An interactive production-grade dashboard inspired by the work I did for High Performance Sport Institute (HPSI) netball analysis. It automates the ingestion of Hudl Sportscode data to visualize pass networks, momentum swings, and defensive KPIs into an interactive dashboard.
         <br><br>
         <a href="https://github.com/ibrahim-nasaruddin/netball-performance-dashboard" target="_blank">View Source Code on GitHub</a>
     - layout: left

@@ -46,14 +46,14 @@ about_content: |
     - **Performance Science:** Supporting elite athletes in various sports (including Athletics, Water Polo, Badminton) through video or data analysis.
     - **Enhancing workflow processes** Identifying bottlenecks in workflow processes and implementing tech-aided solutions that improve productivity.
   
-  <br><br>
+  <br>
   ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
   ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)
   ![RStudio](https://img.shields.io/badge/RStudio-75AADB?logo=rstudio&logoColor=white)
   ![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
   <br>
   Now learning: ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
-  <br><br>
+  <br>
 
 content:
   - title: Portfolio
@@ -109,6 +109,11 @@ content:
       description: |
         <img src="images/model_diagnostics_article.png" alt="Model Diagnostics for Regression Analysis" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
         Comprehensive guide covering the fundamentals of predictive modeling and machine learning in sports analytics. Explores data preparation, model building, hyperparameter tuning, and interpretation using R programming.
+        <br>
+        ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
+        ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F00?logo=tensorflow&logoColor=white)
+        ![Statistics](https://img.shields.io/badge/Statistics-013243?logo=r)
+        <br>
     - layout: left
       title: Predicting Expected Threat (xT) with Random Forest Regression in R
       caption: October 2025
@@ -117,6 +122,11 @@ content:
       description: |
         <img src="images/actual_vs_predicted_xT_article.png" alt="Actual vs Predicted xT values" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
         Practical tutorial on building an Expected Threat (xT) model using Random Forest regression to predict scoring probability based on ball position and game context in football analytics.
+        <br>
+        ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
+        ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F00?logo=tensorflow&logoColor=white)
+        ![Statistics](https://img.shields.io/badge/Statistics-013243?logo=r)
+        <br>
     - layout: left
       title: Is Your Apple Watch Calculating the Right Heart Rate Zones for Your Cardio Workouts?
       caption: July 2025
@@ -133,7 +143,11 @@ content:
       description: |
         <img src="images/SPL_Defenders_article.jpg" alt="Errors leading to Shot vs Minutes Played" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
         Data-driven analysis of defensive performance in the Singapore Premier League's 2024/25 season. Examines SPL defenders through objective metrics including duel success rates, clearances, and errors leading to shots. Uses statistical analysis to identify standout performers like Toni Datković and Bailey Wright, while highlighting the importance of tactical context when evaluating defensive contributions.
-    
+        <br>
+        ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
+        ![ggplot2](https://img.shields.io/badge/ggplot2-276DC3?logo=r&logoColor=white)
+        ![dplyr](https://img.shields.io/badge/dplyr-276DC3?logo=r&logoColor=white)
+        <br>
   - title: Experience
     layout: list
     content:
@@ -217,7 +231,9 @@ content:
       ![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
       ![Shiny](https://img.shields.io/badge/Shiny-75AADB?logo=rstudio&logoColor=white)
       ![SPSS](https://img.shields.io/badge/SPSS-052FAD?logo=ibm&logoColor=white)
+      <br>
       **Interests**
+      <br>
       Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. I occasionally post visualisation plots of team/player stats of the Singapore Premier League on my X account when time permits. I love my time with my family and feel at peace during nature walks. And of course, I strive to keep fit & healthy!
 # Footer
 footer_show_references: true

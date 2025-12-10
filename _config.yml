@@ -41,15 +41,19 @@ about_content: |
   Hi there! I'm Ibrahim. I am currently a Performance Analyst (part-time) at the High Performance Sport Institute in Singapore, as well as a Master of Sport Analytics student at La Trobe University in Australia.
 
   I created this page to showcase my projects and technical growth. Coming from a background in Sport Science with experience in health coaching and youth strength & conditioning, I have always loved the challenge of optimising athletic performance. I enjoy piecing together the 'human performance puzzle' to find individualised solutions. Through this work, I realised I relished the process of data visualisation and- more importantly- the power of a data-informed approach to aid decision-making and analytical workflows.
-    ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
-    ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)
-    ![RStudio](https://img.shields.io/badge/RStudio-75AADB?logo=rstudio&logoColor=white)
-    ![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
-  Now learning:
-    ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+  
   My current areas of interest include:
     - **Performance Science:** Supporting elite athletes in various sports (including Athletics, Water Polo, Badminton) through video or data analysis.
-    - **Enhancing workflow processes** Identifying bottlenecks in workflow processes and implementing tech-aided solutions that improve productivity. 
+    - **Enhancing workflow processes** Identifying bottlenecks in workflow processes and implementing tech-aided solutions that improve productivity.
+  
+  <br><br>
+  ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
+  ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)
+  ![RStudio](https://img.shields.io/badge/RStudio-75AADB?logo=rstudio&logoColor=white)
+  ![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
+  <br>
+  Now learning: ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+  <br><br>
 
 content:
   - title: Portfolio
@@ -69,7 +73,11 @@ content:
                   style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
           </iframe>
         </div>
-        **Tech Stack:** R, Shiny, ggplot2, dplyr.
+        **Tech Stack:**
+        ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
+        ![Shiny](https://img.shields.io/badge/Shiny-75AADB?logo=rstudio&logoColor=white)
+        ![ggplot2](https://img.shields.io/badge/ggplot2-276DC3?logo=r&logoColor=white)
+        ![dplyr](https://img.shields.io/badge/dplyr-276DC3?logo=r&logoColor=white)
         <br>
         A production-grade dashboard inspired by my work with the High Performance Sport Institute (HPSI). I designed this tool to explore and streamline the analysis workflow, automating the ingestion of Hudl Sportscode data to move beyond manual reporting.
         <br><br>
@@ -203,11 +211,13 @@ content:
     layout: text
     content: |
       **Technical Skills**
-
-      I rely heavily on the **R Programming Language** for my daily analysis. I also had previous experience with **Tableau** and **R Shiny** for dashboarding and **SPSS/JASP** for statistical testing. I am currently expanding my skillset in Machine Learning algorithms to better predict sporting outcomes and also learning MS Power BI as an alternative dashboarding tool.
-
+      ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
+      ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)
+      ![RStudio](https://img.shields.io/badge/RStudio-75AADB?logo=rstudio&logoColor=white)
+      ![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
+      ![Shiny](https://img.shields.io/badge/Shiny-75AADB?logo=rstudio&logoColor=white)
+      ![SPSS](https://img.shields.io/badge/SPSS-052FAD?logo=ibm&logoColor=white)
       **Interests**
-
       Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. I occasionally post visualisation plots of team/player stats of the Singapore Premier League on my X account when time permits. I love my time with my family and feel at peace during nature walks. And of course, I strive to keep fit & healthy!
 # Footer
 footer_show_references: true

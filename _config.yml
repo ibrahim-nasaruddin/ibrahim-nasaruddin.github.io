@@ -204,6 +204,11 @@ content:
       **Interests**
 
       Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups and expanding my regional/continental knowledge of other clubs. I occasionally post visualisation plots of team/player stats of the Singapore Premier League on my X account when time permits. I love my time with my family and feel at peace during nature walks. And of course, I strive to keep fit & healthy!
+  - title: Connect
+    layout: text
+    content: |
+      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ibrahimnas" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/ibrahimnas?trk=profile-badge">Ibrahim Nasaruddin</a></div>
       
 # Footer
 footer_show_references: true

@@ -127,11 +127,11 @@ content:
         This project adapts the "Dangerousity" construct—originally developed for football analytics by Link et al. (2016)—to the sport of basketball. The objective was to quantify the instantaneous probability of a player scoring based on spatiotemporal tracking data.
         <br><br>
         **The Framework:**
-        Adopting a rationalistic approach, I constructed a Dangerousity ($DA$) formula derived from four weighted components:
-        * **Zone ($ZO_b$):** Quantifies spatial scoring probability based on distance and angle, adjusted for 2-point vs. 3-point incentives.
-        * **Control ($CO_b$):** dynamic calculation of the ball handler's control based on speed and dribbling status.
-        * **Pressure ($PR_b$):** Defensive intensity measured by Euclidean distance to defenders and contextual time pressure (shot clock/game clock).
-        * **Density ($DE_b$):** Analysis of obstruction in both the "Shot Corridor" and "Passing Lanes."
+        Adopting a rationalistic approach, I constructed a Dangerousity (DA) formula derived from four weighted components:
+        * **Zone (ZO<sub>b</sub>):** Quantifies spatial scoring probability based on distance and angle, adjusted for 2-point vs. 3-point incentives.
+        * **Control (CO<sub>b</sub>):** Dynamic calculation of the ball handler's control based on speed and dribbling status.
+        * **Pressure (PR<sub>b</sub>):** Defensive intensity measured by Euclidean distance to defenders and contextual time pressure (shot clock/game clock).
+        * **Density (DE<sub>b</sub>):** Analysis of obstruction in both the "Shot Corridor" and "Passing Lanes."
         <br><br>
         **Availability:**
         To maintain academic integrity regarding assignment reuse, the full academic paper and the associated R code are not published publicly but are available upon request for professional review.
@@ -139,7 +139,7 @@ content:
         ![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)
         ![Sport Analytics](https://img.shields.io/badge/Sport%20Analytics-000000?logo=google-analytics&logoColor=white)
         ![Spatial Analysis](https://img.shields.io/badge/Spatial%20Analysis-2E8B57?logo=google-maps&logoColor=white)
-        <br>
+        <br><br>
     - layout: left
       title: Predicting Expected Threat (xT) with Random Forest Regression in R
       caption: October 2025

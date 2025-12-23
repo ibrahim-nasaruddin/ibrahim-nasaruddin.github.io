@@ -120,11 +120,11 @@ content:
       title: "Dangerousity in Basketball: A Spatiotemporal Framework"
       subtitle: "Adapting Football Analytics Metrics to the Court"
       caption: "October 2025"
-      link: "mailto:mibrahim.nsrdn@gmail.com?subject=Request%20for%20Dangerousity%20Paper%20and%20Code"
+      link: "mailto:mibrahim.nsrdn@gmail.com"
       link_text: "Request Paper & R Code"
       description: |
         <img src="images/ZO_Component_Heatmap.png" alt="Dangerousity Heatmap" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
-        This project adapts the "Dangerousity" construct—originally developed for football analytics by Link et al. (2016)—to the sport of basketball. The objective was to quantify the instantaneous probability of a player scoring based on spatiotemporal tracking data.
+        This project adapts the "Dangerousity" construct—originally developed for football analytics by <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5201291/" target="_blank">Link et al. (2016)</a>—to the sport of basketball. The objective was to quantify the instantaneous probability of a player scoring based on spatiotemporal tracking data.
         <br><br>
         **The Framework:**
         Adopting a rationalistic approach, I constructed a Dangerousity (DA) formula derived from four weighted components:

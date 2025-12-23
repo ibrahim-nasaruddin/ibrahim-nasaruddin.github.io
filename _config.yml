@@ -81,7 +81,7 @@ content:
         ![ggplot2](https://img.shields.io/badge/ggplot2-276DC3?logo=r&logoColor=white)
         ![dplyr](https://img.shields.io/badge/dplyr-276DC3?logo=r&logoColor=white)
         <br>
-        A production-grade dashboard inspired by my work with the High Performance Sport Institute (HPSI). I designed this tool to explore and streamline the analysis workflow, automating the ingestion of Hudl Sportscode data to move beyond manual reporting.
+        A production-grade dashboard inspired by my work with the High Performance Sport Institute (HPSI). I designed this tool to explore and streamline the analysis workflow, automating the ingestion of mock Hudl Sportscode data to move beyond manual reporting.
         <br><br>
         By shifting the focus from data entry to tactical exploration, it empowers analysts to prioritize coaching conversations. Key features include dynamic pass networks, momentum tracking, and defensive KPI visualisation.
         <br><br>

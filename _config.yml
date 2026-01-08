@@ -57,7 +57,9 @@ content:
       link_text: "View on RPubs"
       description: |
         <img src="images/survival_curve_example.png" alt="Kaplan-Meier Survival Curve" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
-        A practical tutorial exploring **Survival Analysis**—a statistical method often overlooked in sports—to model the "time-to-event" for non-contact injuries. Moving beyond simple binary predictions, this project uses R to analyse a simulated 25-man squad over 4 seasons.
+        Standard classification models ask **if** a player will get injured (Yes/No). Survival Analysis asks **when**.
+        <br><br>
+        By failing to account for *time* and *exposure*, binary predictions often miss the nuance of accumulated fatigue. This project uses **Survival Analysis** to model the "time-to-event" for non-contact injuries in a simulated 25-man squad over 4 seasons.
         <br><br>
         **Key Concepts Covered:**
         * **Right Censoring:** Handling data for players who *don't* get injured.

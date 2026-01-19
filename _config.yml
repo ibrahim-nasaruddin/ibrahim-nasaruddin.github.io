@@ -56,7 +56,7 @@ content:
       description: |
         As Singapore Premier League action returns, I used simple but informative visual ranks to compare players’ key chance-creation and goal threat metrics to highlight early standouts and underperformers across the league.
 
-        {% twitter https://x.com/Ibranalytics/status/2011619284271972794 %}
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">With most having at least 4 games under their belt, here&#39;s a look at the goalscorers so far.<br><br>NOTE: Excluded players with 0 xG AND 0 goals <a href="https://t.co/r505VDI7Xf">pic.twitter.com/r505VDI7Xf</a></p>&mdash; Ibrahim Nasaruddin (@Ibranalytics) <a href="https://twitter.com/Ibranalytics/status/2011619287321256221?ref_src=twsrc%5Etfw">January 15, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <br>
     - layout: left
       title: "Beyond Binary Outcomes: Survival Analysis for Injury Risk"

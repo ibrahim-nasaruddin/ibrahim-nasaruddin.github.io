@@ -50,14 +50,14 @@ content:
     layout: list
     content:
     - layout: left
-  title: Singapore Premiere League – Early-Season Analysis
-  subtitle: X post
-  caption: Jan 2026
-  description: |
-    As Singapore Premier League action returns, I used simple but informative visual ranks to compare players’ key chance-creation and goal threat metrics to highlight early standouts and underperformers across the league.
+      title: Singapore Premiere League – Early-Season Analysis
+      subtitle: X post
+      caption: Jan 2026
+      description: |
+        As Singapore Premier League action returns, I used simple but informative visual ranks to compare players’ key chance-creation and goal threat metrics to highlight early standouts and underperformers across the league.
 
-    {% twitter https://x.com/Ibranalytics/status/2011619284271972794 %}
-    <br>
+        {% twitter https://x.com/Ibranalytics/status/2011619284271972794 %}
+        <br>
     - layout: left
       title: "Beyond Binary Outcomes: Survival Analysis for Injury Risk"
       subtitle: Contextualising Time-to-Event Analysis in Football

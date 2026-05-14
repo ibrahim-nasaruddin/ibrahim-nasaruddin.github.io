@@ -221,9 +221,9 @@ content:
       - layout: right
         title: High Performance Sport Institute
         sub_title: Performance Analyst Assistant
-        caption: Nov 2025 - Present
+        caption: Nov 2025 - Apr 2026
         description: |
-          Reporting to the Sport Performance Analyst to provide analytical support. Tasked with supporting athletics events via remote analysis for the upcoming SEA Games 2025.
+          Developed an automated R Markdown and Python workflow for post-match and competition reporting, cutting report generation time from 1+ hour to seconds. Evaluated and integrated YT-DLP open-source video downloader into analysis workflows, improving video acquisition speed through multi-parallel downloads for efficient notational analysis. Provided remote and real-time race analysis for athletics events for the 2025 SEA Games.
       - layout: right
         title: National University of Singapore
         sub_title: Research Assistant (Exercise Science)
@@ -306,7 +306,7 @@ content:
 
       **Interests**
       <br>
-      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League** and use *Football Manager* as a sandbox for tactical setups. I occasionally post visualisation plots of SPL stats on my X account. I love spending time with my family and feel at peace during nature walks.
+      Outside of academic and professional work, I am an avid follower of the **Singapore Premier League**. I occasionally post visualisation plots of SPL stats on my X account. I love spending time with my family and feel at peace during nature walks.
       <br>
       
       ---

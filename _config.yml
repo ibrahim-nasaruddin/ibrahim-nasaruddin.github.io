@@ -60,7 +60,7 @@ content:
           <source src="images/spl_demo.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        A platform built to evaluate Singapore Premier League players using event data powered by **Hudl Wyscout**. This tool translates raw statistics into actionable recruitment insights through statistical normalisation.
+        A platform built to evaluate Singapore Premier League players using event data powered by **Hudl Wyscout**. This tool translates raw statistics into actionable recruitment insights through statistical normalisation, reducing a scout's player review time from hours of raw stats to a single radar comparison.
         <br><br>
         **Key Functionalities:**
         * **Z-Score Standardisation:** Comparing players on a balanced league-wide scale ($0$ = League Average) to identify elite outliers.
@@ -92,7 +92,7 @@ content:
         <img src="images/survival_curve_example.png" alt="Kaplan-Meier Survival Curve" style="width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px; border: 1px solid #eee;">
         Standard classification models ask **if** a player will get injured (Yes/No). Survival Analysis asks **when**.
         <br><br>
-        By failing to account for *time* and *exposure*, binary predictions often miss the nuance of accumulated fatigue. This project uses **Survival Analysis** to model the "time-to-event" for non-contact injuries in a simulated 25-man squad over 4 seasons.
+        By failing to account for *time* and *exposure*, binary predictions often miss the nuance of accumulated fatigue. This project uses **Survival Analysis** to model the "time-to-event" for non-contact injuries in a simulated 25-man squad over 4 seasons. Potentially helps performance staff prioritise load management for high-risk players before injury occurs
         <br><br>
         **Key Concepts Covered:**
         * **Right Censoring:** Handling data for players who *don't* get injured.
@@ -122,9 +122,9 @@ content:
         ![ggplot2](https://img.shields.io/badge/ggplot2-276DC3?logo=r&logoColor=white)
         ![dplyr](https://img.shields.io/badge/dplyr-276DC3?logo=r&logoColor=white)
         <br>
-        A production-grade dashboard inspired by my work with the High Performance Sport Institute (HPSI). I designed this tool to explore and streamline the analysis workflow, automating the ingestion of mock Hudl Sportscode data to move beyond manual reporting.
+        A dashboard inspired by my work with the High Performance Sport Institute (HPSI). I designed this tool to explore and streamline the analysis workflow, automating the ingestion of mock Hudl Sportscode data to move beyond manual reporting. i.e. it shifts post-match analyst workflow from manual Sportscode tagging to automated insight generation.
         <br><br>
-        By shifting the focus from data entry to tactical exploration, it empowers analysts to prioritize coaching conversations. Key features include dynamic pass networks, momentum tracking, and defensive KPI visualisation.
+        By shifting the focus from data entry to tactical exploration, it empowers analysts to prioritise coaching conversations. Key features include dynamic pass networks, momentum tracking, and defensive KPI visualisation.
         <br><br>
         <a href="https://github.com/ibrahim-nasaruddin/netball-performance-dashboard" target="_blank">View Source Code on GitHub</a>
     - layout: left

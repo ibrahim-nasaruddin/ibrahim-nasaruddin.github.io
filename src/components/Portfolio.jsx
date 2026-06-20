@@ -238,10 +238,6 @@ export default function Portfolio() {
             );
           })}
         </div>
-        <div className="ip-gal-hint">
-          <Terminal size={11} style={{ verticalAlign: "-1px", marginRight: 5 }} />
-          placeholder tiles — drop a screenshot path into each item's <span style={{ color: "var(--signal)" }}>img</span> field to go live
-        </div>
       </section>
 
       {/* experience */}

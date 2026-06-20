@@ -143,7 +143,7 @@ export const GALLERY = [
 
 export const NAV = [
   { id: "work", label: "Work" },
-  { id: "gallery", label: "Gallery" },
   { id: "path", label: "Experience" },
-  { id: "about", label: "About" },
+  { id: "education", label: "Education" },
+  { id: "gallery", label: "Gallery" },
 ];

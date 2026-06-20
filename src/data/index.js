@@ -133,10 +133,13 @@ export const SOCIALS = [
 export const GALLERY = [
   { title: "SPL Player Scouting Dashboard", cat: "Dashboard", iconName: "BarChart3", caption: "Streamlit · radar comparison & automated delta tables", img: null, feature: true },
   { title: "Netball Performance Dashboard", cat: "Dashboard", iconName: "BarChart3", caption: "R Shiny · pass networks & momentum tracking", img: null },
-  { title: "Expected Threat (xT) surface", cat: "Model viz", iconName: "Radar", caption: "Random-forest xT mapped across the pitch", img: null },
-  { title: "Best Defender — SPL 24/25", cat: "Visualisation", iconName: "BarChart3", caption: "ggplot2 duel & error ranking charts", img: null },
+  { title: "Expected Threat (xT) surface", cat: "Model viz", iconName: "Radar", caption: "Random-forest xT mapped across the pitch", img: "/images/actual_vs_predicted_xT_article.png" },
+  { title: "Best Defender — SPL 24/25", cat: "Visualisation", iconName: "BarChart3", caption: "ggplot2 duel & error ranking charts", img: "/images/SPL_Defenders_article.jpg" },
   { title: "SPL Early-Season Analysis", cat: "Visualisation", iconName: "LineChart", caption: "Chance-creation & goal-threat rank plots", img: null },
-  { title: "Survival Analysis — Injury Risk", cat: "Model viz", iconName: "LineChart", caption: "Kaplan-Meier & Cox proportional-hazard curves", img: null },
+  { title: "Survival Analysis — Injury Risk", cat: "Model viz", iconName: "LineChart", caption: "Kaplan-Meier & Cox proportional-hazard curves", img: "/images/survival_curve_example.png" },
+  { title: "Dangerousity in Basketball", cat: "Model viz", iconName: "Radar", caption: "Spatiotemporal scoring-probability heatmap", img: "/images/ZO_Component_Heatmap.png" },
+  { title: "Predictive Modelling with ML", cat: "Model viz", iconName: "LineChart", caption: "Model diagnostics & regression output in R", img: "/images/model_diagnostics_article.png" },
+  { title: "Apple Watch Heart Rate Zones", cat: "Writing", iconName: "LineChart", caption: "VT2, Zone 5 & MAS-test calibration", img: "/images/HRzone_article.jpg" },
   { title: "Race Analysis — 2025 SEA Games", cat: "Video", iconName: "Video", caption: "Real-time athletics race breakdowns (HPSI)", img: null },
   { title: "KiraKit — Load Monitoring", cat: "App", iconName: "LineChart", caption: "Foster sRPE with EWMA load trend & ACWR", img: null },
 ];

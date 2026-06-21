@@ -1,15 +1,15 @@
 export const C = {
-  salmon: "#DC9E82",
-  rose: "#C16E70",
-  slate: "#6B7DB8",
+  mint: "#73FBD3",
+  sky: "#59D2FE",
+  indigo: "#5C7AFF",
 };
 
 export const DOMAINS = ["Football & SPL", "Performance Science", "Methods & ML", "Writing"];
 
 export const DOMAIN_COLOR = {
-  "Football & SPL": C.salmon,
-  "Methods & ML": C.rose,
-  "Performance Science": C.slate,
+  "Football & SPL": C.mint,
+  "Methods & ML": C.indigo,
+  "Performance Science": C.sky,
 };
 
 // month index: Jun'25 = 0 ... Feb'26 = 8

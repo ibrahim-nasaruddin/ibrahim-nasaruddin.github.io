@@ -31,7 +31,7 @@ const InstagramIcon = (p) => (
 );
 
 import {
-  C, DOMAINS, DOMAIN_COLOR, MONTHS, LANES,
+  DOMAINS, DOMAIN_COLOR, MONTHS, LANES,
   PROJECTS, EXPERIENCE, EDUCATION, SKILLS, LEARNING, SOCIALS, GALLERY, NAV,
 } from "../data/index.js";
 
@@ -77,8 +77,8 @@ export default function Portfolio() {
   }, []);
 
   const isDark = theme === "dark";
-  const axisColor = isDark ? "#727568" : "#4A5275";
-  const gridColor = isDark ? "rgba(255,255,255,.06)" : "rgba(3,0,39,.08)";
+  const axisColor = isDark ? "#527088" : "#5A7A9A";
+  const gridColor = isDark ? "rgba(255,255,255,.06)" : "rgba(6,11,26,.08)";
 
   const open = useCallback((href) => {
     if (!href) return;

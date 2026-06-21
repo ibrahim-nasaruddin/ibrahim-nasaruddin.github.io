@@ -14,16 +14,16 @@
   overflow-x: hidden;
 }
 .ip-root.dark {
-  --bg:#0D1B2A; --bg-2:#162436; --bg-3:#1D304A;
+  --bg:#0A1A20; --bg-2:#112630; --bg-3:#18323E;
   --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.18);
-  --text:#FFFCF9; --dim:#8BAABB; --faint:#5C7A8F;
-  --signal:#06D6A0; --signal-2:#04A87D; --on-signal:#0D1B2A; --alert:#FFD166;
+  --text:#E2DBBE; --dim:#9DBBAE; --faint:#618078;
+  --signal:#188FA7; --signal-2:#116B7E; --on-signal:#0A1A20; --alert:#769FB6;
 }
 .ip-root.light {
-  --bg:#FFFCF9; --bg-2:#FFFFFF; --bg-3:#F0EDE8;
-  --line:rgba(38,84,124,.10); --line-2:rgba(38,84,124,.20);
-  --text:#0D1B2A; --dim:#26547C; --faint:#6B8FA8;
-  --signal:#EF476F; --signal-2:#C73358; --on-signal:#FFFCF9; --alert:#FFD166;
+  --bg:#E2DBBE; --bg-2:#EFECDA; --bg-3:#D5D6AA;
+  --line:rgba(10,26,32,.10); --line-2:rgba(10,26,32,.20);
+  --text:#0A1A20; --dim:#2C5060; --faint:#769FB6;
+  --signal:#188FA7; --signal-2:#116B7E; --on-signal:#E2DBBE; --alert:#9DBBAE;
 }
 .ip-root *{ box-sizing:border-box; }
 .ip-root a{ color:inherit; text-decoration:none; }

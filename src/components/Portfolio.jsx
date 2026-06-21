@@ -77,8 +77,8 @@ export default function Portfolio() {
   }, []);
 
   const isDark = theme === "dark";
-  const axisColor = isDark ? "#6B827A" : "#82877E";
-  const gridColor = isDark ? "rgba(255,255,255,.06)" : "rgba(18,30,25,.08)";
+  const axisColor = isDark ? "#727568" : "#4A5275";
+  const gridColor = isDark ? "rgba(255,255,255,.06)" : "rgba(3,0,39,.08)";
 
   const open = useCallback((href) => {
     if (!href) return;

@@ -14,16 +14,16 @@
   overflow-x: hidden;
 }
 .ip-root.dark {
-  --bg:#0E1813; --bg-2:#142420; --bg-3:#1C322B;
+  --bg:#030027; --bg-2:#151E3F; --bg-3:#1D254F;
   --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.18);
-  --text:#ECF2EE; --dim:#9DB2A8; --faint:#6B827A;
-  --signal:#3DA876; --signal-2:#27684C; --on-signal:#0B1A13; --alert:#E7A93C;
+  --text:#F2F3D9; --dim:#ADB0A0; --faint:#727568;
+  --signal:#DC9E82; --signal-2:#B87D64; --on-signal:#030027; --alert:#C16E70;
 }
 .ip-root.light {
-  --bg:#ECEFEE; --bg-2:#F8FAF9; --bg-3:#DCE3DF;
-  --line:rgba(16,28,22,.12); --line-2:rgba(16,28,22,.22);
-  --text:#15231C; --dim:#4E5C54; --faint:#7F867F;
-  --signal:#1E6E4E; --signal-2:#16573D; --on-signal:#F8FAF9; --alert:#B6781A;
+  --bg:#F2F3D9; --bg-2:#FAFAEC; --bg-3:#E8E9CB;
+  --line:rgba(3,0,39,.10); --line-2:rgba(3,0,39,.20);
+  --text:#030027; --dim:#151E3F; --faint:#4A5275;
+  --signal:#C16E70; --signal-2:#A3585B; --on-signal:#F2F3D9; --alert:#DC9E82;
 }
 .ip-root *{ box-sizing:border-box; }
 .ip-root a{ color:inherit; text-decoration:none; }
@@ -190,10 +190,10 @@
 .ip-two{ display:grid; grid-template-columns:1.2fr .8fr; gap:40px; }
 @media(max-width:780px){ .ip-two{ grid-template-columns:1fr; gap:30px; } }
 .ip-edu{ border-top:1px solid var(--line); padding:16px 0; }
-.ip-edu .deg{ font-family:var(--font-display); font-weight:600; font-size:17px; }
-.ip-edu .sch{ font-size:15px; color:var(--dim); }
-.ip-edu .tm{ font-family:var(--font-mono); font-size:13px; color:var(--faint); }
-.ip-edu .nt{ font-size:14px; color:var(--faint); margin-top:4px; }
+.ip-edu .deg{ font-family:var(--font-display); font-weight:600; font-size:20px; }
+.ip-edu .sch{ font-size:17px; color:var(--dim); }
+.ip-edu .tm{ font-family:var(--font-mono); font-size:15px; color:var(--faint); }
+.ip-edu .nt{ font-size:15px; color:var(--faint); margin-top:4px; }
 .ip-skills-h{ font-family:var(--font-mono); font-size:13px; letter-spacing:.12em; color:var(--faint); text-transform:uppercase; margin:0 0 12px; }
 .ip-skill-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px; }
 .ip-skill{ font-family:var(--font-mono); font-size:14px; padding:6px 11px; border-radius:8px; border:1px solid var(--line-2); color:var(--text); }

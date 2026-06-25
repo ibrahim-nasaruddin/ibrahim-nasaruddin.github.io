@@ -119,7 +119,7 @@ export default function Portfolio() {
             <h1 className="ip-h1">Ibrahim<br />Nasaruddin</h1>
             <div className="ip-role">MSc Sport Analytics — La Trobe University</div>
             <p className="ip-thesis">
-              Sport science graduate with a coaching background spanning youth strength &amp; conditioning, senior fitness and general-population health. I use data to sharpen performance decisions and surface insight — while staying <b>human-first</b> and <b>athlete-centric</b>: analytics supports the practitioner's judgement, it doesn't replace it.
+              Hi! Thank you for visiting this page. I'm a sport science graduate with a coaching background spanning youth strength &amp; conditioning, senior fitness and general-population health. I use data to sharpen performance decisions and surface insight while staying <b>human-first</b> and <b>athlete-centric</b>. Analytics is always a tool in the toolbox that supports the practitioner's judgement, it doesn't replace it.
             </p>
             <div className="ip-cta-row">
               <a className="ip-btn ip-btn-pri" href="#work">View work <ArrowUpRight size={15} /></a>

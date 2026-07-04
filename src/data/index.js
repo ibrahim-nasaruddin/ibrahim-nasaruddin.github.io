@@ -27,6 +27,7 @@ export const PROJECTS = [
     blurb: "Evaluates Singapore Premier League players from Hudl Wyscout event data — z-score standardisation, head-to-head radar profiles and automated delta tables turn hours of raw stats into one comparison.",
     tags: ["Python", "Streamlit", "Plotly", "Pandas"],
     href: "https://spl-dashboard-2025-26-season.streamlit.app/", cta: "Open dashboard",
+    embed: "https://spl-dashboard-2025-26-season.streamlit.app/?embed=true", demoLabel: "spl-dashboard.streamlit.app",
   },
   {
     id: "spl-early", title: "SPL Early-Season Analysis",
@@ -51,6 +52,7 @@ export const PROJECTS = [
     blurb: "An R Shiny tool inspired by HPSI work — automates Hudl Sportscode ingestion and shifts analysts from manual tagging to pass networks, momentum tracking and defensive KPIs.",
     tags: ["R", "Shiny", "ggplot2", "dplyr"],
     href: "https://8k17oa-ibrahim0bin0nasaruddin.shinyapps.io/Netball-Performance-Dashboard/", cta: "Open app",
+    embed: "https://8k17oa-ibrahim0bin0nasaruddin.shinyapps.io/Netball-Performance-Dashboard/", demoLabel: "shinyapps.io/netball",
   },
   {
     id: "hpsi", title: "Performance Analysis with HPSI",
@@ -135,15 +137,15 @@ export const GALLERY = [
   { title: "Netball Performance Dashboard", cat: "Dashboard", iconName: "BarChart3", caption: "R Shiny · pass networks & momentum tracking", img: null },
   { title: "Expected Threat (xT) surface", cat: "Model viz", iconName: "Radar", caption: "Random-forest xT mapped across the pitch", img: "/images/actual_vs_predicted_xT_article.png" },
   { title: "Best Defender — SPL 24/25", cat: "Visualisation", iconName: "BarChart3", caption: "ggplot2 duel & error ranking charts", img: "/images/SPL_Defenders_article.jpg" },
+  { title: "SPL Early-Season Analysis", cat: "Visualisation", iconName: "LineChart", caption: "Chance-creation & goal-threat rank plots", img: null },
   { title: "Survival Analysis — Injury Risk", cat: "Model viz", iconName: "LineChart", caption: "Kaplan-Meier & Cox proportional-hazard curves", img: "/images/survival_curve_example.png" },
-  { title: "Dangerousity in Basketball", cat: "Model viz", iconName: "Radar", caption: "Spatiotemporal scoring-probability heatmap", img: "/images/ZO_Component_Heatmap.png" },
-  { title: "Predictive Modelling with ML", cat: "Model viz", iconName: "LineChart", caption: "Model diagnostics & regression output in R", img: "/images/model_diagnostics_article.png" },
-  { title: "Apple Watch Heart Rate Zones", cat: "Writing", iconName: "LineChart", caption: "VT2, Zone 5 & MAS-test calibration", img: "/images/HRzone_article.jpg" },
+  { title: "Race Analysis — 2025 SEA Games", cat: "Video", iconName: "Video", caption: "Real-time athletics race breakdowns (HPSI)", img: null },
+  { title: "KiraKit — Load Monitoring", cat: "App", iconName: "LineChart", caption: "Foster sRPE with EWMA load trend & ACWR", img: null },
 ];
 
 export const NAV = [
   { id: "work", label: "Work" },
-  { id: "path", label: "Experience" },
-  { id: "education", label: "Education" },
   { id: "gallery", label: "Gallery" },
+  { id: "path", label: "Experience" },
+  { id: "about", label: "About" },
 ];

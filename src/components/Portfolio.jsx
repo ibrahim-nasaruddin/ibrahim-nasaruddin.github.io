@@ -7,6 +7,7 @@ import {
   Mail, ArrowUpRight,
   Sun, Moon, Terminal, LineChart, BarChart3, Radar, Video, Maximize2, X,
 } from "lucide-react";
+import { track } from "../lib/analytics.js";
 
 // Brand icons removed from lucide-react v1 — inline SVGs
 const GithubIcon = (p) => (
@@ -52,6 +53,30 @@ function useReveal() {
   return ref;
 }
 
+function useSectionView() {
+  useEffect(() => {
+    const seen = new Set();
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const name = e.target.dataset.section;
+          if (seen.has(name)) return;
+          seen.add(name);
+          track("section_view", {
+            section_name: name,
+            section_order: Number(e.target.dataset.sectionOrder),
+            page_type: "one_page_portfolio",
+          });
+        });
+      },
+      { threshold: 0.25 }
+    );
+    document.querySelectorAll("[data-section]").forEach((s) => obs.observe(s));
+    return () => obs.disconnect();
+  }, []);
+}
+
 function ChartTip({ active, payload }) {
   if (!active || !payload || !payload.length) return null;
   const p = payload[0].payload;
@@ -65,10 +90,10 @@ function ChartTip({ active, payload }) {
 }
 
 export default function Portfolio() {
-  const [theme, setTheme] = useState("dark");
-  const [filter, setFilter] = useState("All");
+  const [theme, setTheme] = useState("light");
   const [lightbox, setLightbox] = useState(null);
   const revRef = useReveal();
+  useSectionView();
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === "Escape") setLightbox(null); };
@@ -91,7 +116,8 @@ export default function Portfolio() {
     data: PROJECTS.filter((p) => p.primary === d).map((p) => ({ ...p, y: p.lane })),
   }));
 
-  const visible = filter === "All" ? PROJECTS : PROJECTS.filter((p) => p.domains.includes(filter));
+  const featured = PROJECTS.filter((p) => p.embed);
+  const more = PROJECTS.filter((p) => !p.embed);
 
   return (
     <div className={`ip-root ${theme}`} ref={revRef}>
@@ -112,156 +138,174 @@ export default function Portfolio() {
       </nav>
 
       {/* hero */}
-      <header className="ip-wrap ip-hero">
-        <div className="ip-hero-grid">
-          <div className="ip-rev in">
-            <div className="ip-eyebrow">Sport Analytics · Singapore</div>
-            <h1 className="ip-h1">Ibrahim<br />Nasaruddin</h1>
-            <div className="ip-role">MSc Sport Analytics — La Trobe University</div>
-            <p className="ip-thesis">
-              Hi! Thank you for visiting this page. I'm a sport science graduate with a coaching background spanning youth strength &amp; conditioning, senior fitness and general-population health. I use data to sharpen performance decisions and surface insight while staying <b>human-first</b> and <b>athlete-centric</b>. Analytics is always a tool in the toolbox that supports the practitioner's judgement, it doesn't replace it.
-            </p>
-            <div className="ip-cta-row">
-              <a className="ip-btn ip-btn-pri" href="#work">View work <ArrowUpRight size={15} /></a>
-              <a className="ip-btn ip-btn-ghost" href="mailto:mibrahim.nsrdn@gmail.com"><Mail size={15} /> Get in touch</a>
-            </div>
-            <div className="ip-stats">
-              <div className="ip-stat"><div className="n">5 yrs</div><div className="l">In performance</div></div>
-            </div>
+      <header className="ip-wrap ip-hero" data-section="hero" data-section-order="1">
+        <div className="ip-shapes" aria-hidden="true">
+          <span className="ip-shape s1" />
+          <span className="ip-shape s2" />
+          <span className="ip-shape s3" />
+          <span className="ip-shape s4" />
+        </div>
+        <div className="ip-hero-inner ip-rev in">
+          <div className="ip-eyebrow">Sport Analytics · Singapore</div>
+          <h1 className="ip-h1">Ibrahim<br />Nasaruddin</h1>
+          <div className="ip-role">MSc Sport Analytics — La Trobe University</div>
+          <p className="ip-thesis">
+            Hi! Thank you for visiting this page. I'm a sport science graduate with a coaching background spanning youth strength &amp; conditioning, senior fitness and general-population health. I use data to sharpen performance decisions and surface insight while staying <b>human-first</b> and <b>athlete-centric</b>. Analytics is always a tool in the toolbox that supports the practitioner's judgement, it doesn't replace it.
+          </p>
+          <div className="ip-cta-row">
+            <a
+              className="ip-btn ip-btn-pri"
+              href="#work"
+              onClick={() => track("cta_click", {
+                cta_name: "hero_primary",
+                cta_text: "View work",
+                location: "hero",
+                destination_type: "section",
+              })}
+            >View work <ArrowUpRight size={15} /></a>
+            <a
+              className="ip-btn ip-btn-ghost"
+              href="mailto:mibrahim.nsrdn@gmail.com"
+              onClick={() => track("contact_click", {
+                location: "hero",
+                method: "email",
+                label: "Get in touch",
+              })}
+            ><Mail size={15} /> Get in touch</a>
           </div>
-
-          {/* signature: project lane chart */}
-          <div className="ip-panel ip-rev in">
-            <div className="ip-panel-head">
-              <div className="ip-panel-title">Project index · by domain</div>
-              <div className="ip-legend">
-                {series.map((s) => (
-                  <span key={s.name}><i style={{ background: s.color }} />{s.name.split(" ")[0]}</span>
-                ))}
-              </div>
-            </div>
-            <div style={{ width: "100%", height: 280 }}>
-              <ResponsiveContainer>
-                <ScatterChart margin={{ top: 10, right: 16, bottom: 6, left: 6 }}>
-                  <CartesianGrid stroke={gridColor} horizontal vertical={false} />
-                  <XAxis
-                    type="number" dataKey="x" domain={[-0.6, 8.6]}
-                    ticks={[0, 1, 4, 5, 6, 7, 8]} tickFormatter={(v) => MONTHS[v] || ""}
-                    tick={{ fill: axisColor, fontSize: 10, fontFamily: "IBM Plex Mono" }}
-                    axisLine={{ stroke: gridColor }} tickLine={false} interval={0}
-                  />
-                  <YAxis
-                    type="number" dataKey="y" domain={[-0.6, 2.6]}
-                    ticks={[0, 1, 2]} tickFormatter={(v) => LANES[v] || ""}
-                    tick={{ fill: axisColor, fontSize: 9.5, fontFamily: "IBM Plex Mono" }}
-                    axisLine={false} tickLine={false} width={66}
-                  />
-                  <ZAxis range={[140, 140]} />
-                  <Tooltip content={<ChartTip />} cursor={{ stroke: axisColor, strokeDasharray: "3 3" }} />
-                  {series.map((s) => (
-                    <Scatter
-                      key={s.name} name={s.name} data={s.data} fill={s.color}
-                      onClick={(pt) => open(pt && pt.href)} style={{ cursor: "pointer" }}
-                    />
-                  ))}
-                </ScatterChart>
-              </ResponsiveContainer>
-            </div>
-            <div className="ip-mono" style={{ fontSize: 10, color: "var(--faint)", padding: "0 6px 10px" }}>
-              <Terminal size={11} style={{ verticalAlign: "-1px", marginRight: 5 }} />
-              hover a point for detail · click to open the project
-            </div>
+          <div className="ip-stats">
+            <div className="ip-stat"><div className="n">5 yrs</div><div className="l">In performance</div></div>
           </div>
         </div>
       </header>
 
+      {/* chart band */}
+      <section className="ip-wrap ip-chartband">
+        <div className="ip-panel ip-rev">
+          <div className="ip-panel-head">
+            <div className="ip-panel-title">Project index · by domain</div>
+            <div className="ip-legend">
+              {series.map((s) => (
+                <span key={s.name}><i style={{ background: s.color }} />{s.name.split(" ")[0]}</span>
+              ))}
+            </div>
+          </div>
+          <div style={{ width: "100%", height: 300 }}>
+            <ResponsiveContainer>
+              <ScatterChart margin={{ top: 10, right: 16, bottom: 6, left: 6 }}>
+                <CartesianGrid stroke={gridColor} horizontal vertical={false} />
+                <XAxis
+                  type="number" dataKey="x" domain={[-0.6, 8.6]}
+                  ticks={[0, 1, 4, 5, 6, 7, 8]} tickFormatter={(v) => MONTHS[v] || ""}
+                  tick={{ fill: axisColor, fontSize: 10, fontFamily: "IBM Plex Mono" }}
+                  axisLine={{ stroke: gridColor }} tickLine={false} interval={0}
+                />
+                <YAxis
+                  type="number" dataKey="y" domain={[-0.6, 2.6]}
+                  ticks={[0, 1, 2]} tickFormatter={(v) => LANES[v] || ""}
+                  tick={{ fill: axisColor, fontSize: 9.5, fontFamily: "IBM Plex Mono" }}
+                  axisLine={false} tickLine={false} width={66}
+                />
+                <ZAxis range={[140, 140]} />
+                <Tooltip content={<ChartTip />} cursor={{ stroke: axisColor, strokeDasharray: "3 3" }} />
+                {series.map((s) => (
+                  <Scatter
+                    key={s.name} name={s.name} data={s.data} fill={s.color}
+                    onClick={(pt) => {
+                      if (pt) {
+                        track("project_click", {
+                          project_name: pt.title,
+                          project_slug: pt.id,
+                          project_category: pt.primary,
+                          location: "hero_chart",
+                          outbound: true,
+                        });
+                      }
+                      open(pt && pt.href);
+                    }}
+                    style={{ cursor: "pointer" }}
+                  />
+                ))}
+              </ScatterChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="ip-mono" style={{ fontSize: 10, color: "var(--faint)", padding: "0 6px 10px" }}>
+            <Terminal size={11} style={{ verticalAlign: "-1px", marginRight: 5 }} />
+            hover a point for detail · click to open the project
+          </div>
+        </div>
+      </section>
+
       {/* work */}
-      <section id="work" className="ip-wrap ip-sec">
+      <section id="work" className="ip-wrap ip-sec" data-section="work" data-section-order="2">
         <div className="ip-sec-head ip-rev">
           <span className="ip-sec-idx">01</span>
           <span className="ip-sec-title">Selected work</span>
           <span className="ip-sec-line" />
         </div>
-        <div className="ip-filters ip-rev">
-          {["All", ...DOMAINS].map((f) => (
-            <button key={f} className={`ip-chip ${filter === f ? "on" : ""}`} onClick={() => setFilter(f)}>
-              {f}
-            </button>
-          ))}
-        </div>
-        <div className="ip-grid">
-          {visible.map((p) => (
-            <article key={p.id} className="ip-card" onClick={() => open(p.href)} style={{ cursor: "pointer" }}>
-              <div className="ip-card-top">
-                <span className="ip-card-date">{p.date}</span>
-                <span className="ip-card-tag ip-mono" style={{ color: DOMAIN_COLOR[p.primary], border: `1px solid ${DOMAIN_COLOR[p.primary]}55` }}>
-                  {p.primary}
-                </span>
-              </div>
-              <h3 className="ip-card-title">{p.title}</h3>
-              <p className="ip-card-blurb">{p.blurb}</p>
-              <div className="ip-badges">
-                {p.tags.map((t) => <span key={t} className="ip-badge">{t}</span>)}
-              </div>
-              <span className="ip-card-cta">{p.cta} <ArrowUpRight size={14} /></span>
-            </article>
-          ))}
-        </div>
-      </section>
 
-      {/* experience */}
-      <section id="path" className="ip-wrap ip-sec">
-        <div className="ip-sec-head ip-rev">
-          <span className="ip-sec-idx">02</span>
-          <span className="ip-sec-title">Experience</span>
-          <span className="ip-sec-line" />
-        </div>
-        <div className="ip-tl ip-rev">
-          {EXPERIENCE.map((e) => (
-            <div className="ip-tl-item" key={e.org + e.role}>
-              <div className="ip-tl-time">{e.time}</div>
-              <div className="ip-tl-role">{e.role}</div>
-              <div className="ip-tl-org">{e.org}</div>
-              <div className="ip-tl-note">{e.note}</div>
+        {featured.map((p, i) => (
+          <div key={p.id} className={`ip-case ip-rev ${i % 2 === 1 ? "flip" : ""}`}>
+            <div className="ip-case-text">
+              <div className="ip-case-meta" style={{ color: DOMAIN_COLOR[p.primary] }}>{p.primary}</div>
+              <div className="ip-case-meta">{p.date} · {p.tags.join(" / ")}</div>
+              <h3 className="ip-case-title">{p.title}</h3>
+              <p className="ip-case-desc">{p.blurb}</p>
+              <a
+                className="ip-case-link"
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => track("project_click", {
+                  project_name: p.title,
+                  project_slug: p.id,
+                  project_category: p.primary,
+                  location: "case_study",
+                  outbound: true,
+                })}
+              >
+                Open live app <ArrowUpRight size={15} />
+              </a>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* education */}
-      <section id="education" className="ip-wrap ip-sec">
-        <div className="ip-sec-head ip-rev">
-          <span className="ip-sec-idx">03</span>
-          <span className="ip-sec-title">Education</span>
-          <span className="ip-sec-line" />
-        </div>
-        <div className="ip-two ip-rev">
-          <div>
-            {EDUCATION.map((ed) => (
-              <div className="ip-edu" key={ed.school}>
-                <div className="deg">{ed.degree}</div>
-                <div className="sch">{ed.school} · <span className="tm">{ed.time}</span></div>
-                <div className="nt">{ed.note}</div>
+            <div className="ip-case-demo">
+              <div className="ip-demo-bar">
+                <i /><i /><i />
+                <em>{p.demoLabel}</em>
               </div>
-            ))}
-          </div>
-          <div>
-            <h3 className="ip-skills-h">Toolkit</h3>
-            <div className="ip-skill-row">
-              {SKILLS.map((s) => <span className="ip-skill" key={s}>{s}</span>)}
-            </div>
-            <h3 className="ip-skills-h">Currently learning</h3>
-            <div className="ip-skill-row">
-              {LEARNING.map((s) => <span className="ip-skill learn" key={s}>{s}</span>)}
+              <iframe className="ip-demo-frame" src={p.embed} title={p.title} loading="lazy" />
             </div>
           </div>
+        ))}
+
+        <h4 className="ip-more-h">More work</h4>
+        <div className="ip-more">
+          {more.map((p) => (
+            <a
+              key={p.id}
+              className="ip-more-item ip-rev"
+              href={p.href}
+              target={p.href.startsWith("mailto:") ? undefined : "_blank"}
+              rel="noopener noreferrer"
+              onClick={() => track("project_click", {
+                project_name: p.title,
+                project_slug: p.id,
+                project_category: p.primary,
+                location: "more_work",
+                outbound: !p.href.startsWith("mailto:"),
+              })}
+            >
+              <span className="ip-more-title">{p.title}</span>
+              <span className="ip-more-meta">{p.primary} · {p.date}</span>
+              <span className="ip-more-cta">{p.cta} <ArrowUpRight size={13} /></span>
+            </a>
+          ))}
         </div>
       </section>
 
       {/* gallery */}
-      <section id="gallery" className="ip-wrap ip-sec">
+      <section id="gallery" className="ip-wrap ip-sec" data-section="gallery" data-section-order="3">
         <div className="ip-sec-head ip-rev">
-          <span className="ip-sec-idx">04</span>
+          <span className="ip-sec-idx">02</span>
           <span className="ip-sec-title">Gallery</span>
           <span className="ip-sec-line" />
         </div>
@@ -287,14 +331,90 @@ export default function Portfolio() {
             );
           })}
         </div>
+        <div className="ip-gal-hint">
+          <Terminal size={11} style={{ verticalAlign: "-1px", marginRight: 5 }} />
+          click any tile to expand · drop a screenshot path into each item's img field to go live
+        </div>
       </section>
 
-      {/* footer */}
-      <footer className="ip-wrap ip-foot">
+      {/* experience + education */}
+      <section id="path" className="ip-wrap ip-sec" data-section="experience" data-section-order="4">
+        <div className="ip-sec-head ip-rev">
+          <span className="ip-sec-idx">03</span>
+          <span className="ip-sec-title">Experience</span>
+          <span className="ip-sec-line" />
+        </div>
+        <div className="ip-tl ip-rev">
+          {EXPERIENCE.map((e) => (
+            <div className="ip-tl-item" key={e.org + e.role}>
+              <div className="ip-tl-time">{e.time}</div>
+              <div className="ip-tl-role">{e.role}</div>
+              <div className="ip-tl-org">{e.org}</div>
+              <div className="ip-tl-note">{e.note}</div>
+            </div>
+          ))}
+        </div>
+        <div className="ip-two" style={{ marginTop: 40 }}>
+          <div className="ip-rev">
+            <h3 className="ip-skills-h">Education</h3>
+            {EDUCATION.map((ed) => (
+              <div className="ip-edu" key={ed.school}>
+                <div className="deg">{ed.degree}</div>
+                <div className="sch">{ed.school} · <span className="tm">{ed.time}</span></div>
+                <div className="nt">{ed.note}</div>
+              </div>
+            ))}
+          </div>
+          <div className="ip-rev">
+            <h3 className="ip-skills-h">Toolkit</h3>
+            <div className="ip-skill-row">
+              {SKILLS.map((s) => <span className="ip-skill" key={s}>{s}</span>)}
+            </div>
+            <h3 className="ip-skills-h">Currently learning</h3>
+            <div className="ip-skill-row">
+              {LEARNING.map((s) => <span className="ip-skill learn" key={s}>{s}</span>)}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* about */}
+      <section id="about" className="ip-wrap ip-sec" data-section="about" data-section-order="5">
+        <div className="ip-sec-head ip-rev">
+          <span className="ip-sec-idx">04</span>
+          <span className="ip-sec-title">The non-linear path</span>
+          <span className="ip-sec-line" />
+        </div>
+        <div className="ip-about ip-rev">
+          <p>
+            My obsession with human performance didn't start in a lab — it started on a track. That 12-second blur in a 100m race made me want to understand <b>why</b> I was fast, and I spent hours dissecting Asafa Powell clips frame-by-frame trying to read human force generation.
+          </p>
+          <p>
+            The path had hurdles — academic setbacks, repeated years — but those moments hardened me. I realised my struggles weren't a lack of ability; they were a lack of purpose. Finding sport science at Republic Polytechnic in 2016 was the turning point: for the first time, my curiosity was being fed.
+          </p>
+          <div className="ip-pull">
+            "Assess, don't guess." I relish the process of quantification — and the power of a data-informed approach to sharpen decisions.
+          </div>
+          <p>
+            My philosophy is simple: <b>how can I make a positive difference in someone else's life?</b> A growth mindset with an abundance outlook — to collaborate rather than compete. I see my credentials not as a finished story, but as an invitation for others to find their own purpose.
+          </p>
+        </div>
+      </section>
+
+      {/* footer / contact */}
+      <footer className="ip-wrap ip-foot" data-section="contact" data-section-order="6">
         <div className="ip-foot-grid">
           <div className="ip-rev">
             <h3>Let's build something.</h3>
-            <a className="em" href="mailto:mibrahim.nsrdn@gmail.com">mibrahim.nsrdn@gmail.com</a>
+            <a
+              className="em"
+              href="mailto:mibrahim.nsrdn@gmail.com"
+              onClick={() => track("contact_click", {
+                location: "footer",
+                method: "email",
+                label: "mibrahim.nsrdn@gmail.com",
+              })}
+            >mibrahim.nsrdn@gmail.com</a>
           </div>
           <div className="ip-socials ip-rev">
             {SOCIALS.map((s) => {

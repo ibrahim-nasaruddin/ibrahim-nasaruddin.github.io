@@ -89,7 +89,7 @@ function ChartTip({ active, payload }) {
   );
 }
 
-export default function Portfolio() {
+export default function Portfolio({ articles = [] }) {
   const [theme, setTheme] = useState("light");
   const [lightbox, setLightbox] = useState(null);
   const revRef = useReveal();
@@ -337,10 +337,49 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* writing / articles */}
+      {articles.length > 0 && (
+        <section id="articles" className="ip-wrap ip-sec" data-section="articles" data-section-order="4">
+          <div className="ip-sec-head ip-rev">
+            <span className="ip-sec-idx">03</span>
+            <span className="ip-sec-title">Writing</span>
+            <span className="ip-sec-line" />
+          </div>
+          <div className="ip-art-grid">
+            {articles.map((a) => (
+              <a
+                key={a.link}
+                className="ip-art-card ip-rev"
+                href={a.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => track("article_click", {
+                  article_title: a.title,
+                  location: "articles_section",
+                })}
+              >
+                <div className="ip-art-img">
+                  {a.img
+                    ? <img src={a.img} alt="" loading="lazy" />
+                    : <LineChart size={28} />
+                  }
+                </div>
+                <div className="ip-art-body">
+                  <div className="ip-art-date">{a.date}</div>
+                  <div className="ip-art-title">{a.title}</div>
+                  <div className="ip-art-desc">{a.desc}</div>
+                  <span className="ip-art-cta">Read on Substack <ArrowUpRight size={13} /></span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* experience + education */}
-      <section id="path" className="ip-wrap ip-sec" data-section="experience" data-section-order="4">
+      <section id="path" className="ip-wrap ip-sec" data-section="experience" data-section-order="5">
         <div className="ip-sec-head ip-rev">
-          <span className="ip-sec-idx">03</span>
+          <span className="ip-sec-idx">04</span>
           <span className="ip-sec-title">Experience</span>
           <span className="ip-sec-line" />
         </div>

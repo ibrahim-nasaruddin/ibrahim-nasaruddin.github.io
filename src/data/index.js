@@ -146,5 +146,6 @@ export const GALLERY = [
 export const NAV = [
   { id: "work", label: "Work" },
   { id: "gallery", label: "Gallery" },
+  { id: "articles", label: "Writing" },
   { id: "path", label: "Experience" },
 ];

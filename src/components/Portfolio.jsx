@@ -378,29 +378,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* about */}
-      <section id="about" className="ip-wrap ip-sec" data-section="about" data-section-order="5">
-        <div className="ip-sec-head ip-rev">
-          <span className="ip-sec-idx">04</span>
-          <span className="ip-sec-title">The non-linear path</span>
-          <span className="ip-sec-line" />
-        </div>
-        <div className="ip-about ip-rev">
-          <p>
-            My obsession with human performance didn't start in a lab — it started on a track. That 12-second blur in a 100m race made me want to understand <b>why</b> I was fast, and I spent hours dissecting Asafa Powell clips frame-by-frame trying to read human force generation.
-          </p>
-          <p>
-            The path had hurdles — academic setbacks, repeated years — but those moments hardened me. I realised my struggles weren't a lack of ability; they were a lack of purpose. Finding sport science at Republic Polytechnic in 2016 was the turning point: for the first time, my curiosity was being fed.
-          </p>
-          <div className="ip-pull">
-            "Assess, don't guess." I relish the process of quantification — and the power of a data-informed approach to sharpen decisions.
-          </div>
-          <p>
-            My philosophy is simple: <b>how can I make a positive difference in someone else's life?</b> A growth mindset with an abundance outlook — to collaborate rather than compete. I see my credentials not as a finished story, but as an invitation for others to find their own purpose.
-          </p>
-        </div>
-      </section>
-
       {/* footer / contact */}
       <footer className="ip-wrap ip-foot" data-section="contact" data-section-order="6">
         <div className="ip-foot-grid">

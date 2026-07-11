@@ -348,14 +348,13 @@ export default function Portfolio({ articles = [] }) {
           <div className="ip-art-grid">
             {articles.map((a) => (
               <a
-                key={a.link}
+                key={a.href}
                 className="ip-art-card ip-rev"
-                href={a.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={a.href}
                 onClick={() => track("article_click", {
                   article_title: a.title,
                   location: "articles_section",
+                  outbound: false,
                 })}
               >
                 <div className="ip-art-img">

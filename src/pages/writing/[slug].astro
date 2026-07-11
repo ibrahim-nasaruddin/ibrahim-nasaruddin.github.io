@@ -1,0 +1,84 @@
+---
+import '../../styles/global.css';
+import { fetchArticles } from '../../lib/feed.js';
+
+export async function getStaticPaths() {
+  let articles = [];
+  try {
+    articles = await fetchArticles();
+  } catch {
+    // no routes generated on fetch failure
+  }
+  return articles.map((a) => ({
+    params: { slug: a.slug },
+    props: a,
+  }));
+}
+
+const { title, date, img, content, substackLink, desc } = Astro.props;
+
+const wordCount = content
+  ? content.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  : 0;
+const readingMins = wordCount ? Math.max(1, Math.ceil(wordCount / 200)) : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={desc} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>{title} · Ibrahim Nasaruddin</title>
+  </head>
+  <body style="margin:0;padding:0;">
+    <div class="ip-root light">
+
+      <nav class="ip-nav">
+        <div class="ip-wrap ip-nav-in">
+          <a href="/" class="ip-brand"><span class="dot"></span>IBRAHIM_N</a>
+          <div class="ip-nav-links">
+            <a href="/#articles" class="ip-nav-back">← Writing</a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="ip-wrap ip-article">
+        {img && (
+          <div class="ip-article-cover">
+            <img src={img} alt="" />
+          </div>
+        )}
+
+        <div class="ip-article-eyebrow">
+          <span class="ip-eyebrow">Sport Analytics · Writing</span>
+          {date && <span class="ip-article-date">{date}</span>}
+          {readingMins && <span class="ip-article-date">{readingMins} min read</span>}
+        </div>
+
+        <h1 class="ip-article-title">{title}</h1>
+
+        {content
+          ? <div class="ip-prose" set:html={content} />
+          : <div class="ip-prose"><p>{desc}</p></div>
+        }
+
+        <div class="ip-article-footer">
+          <a href={substackLink} target="_blank" rel="noopener noreferrer" class="ip-btn ip-btn-ghost">
+            View original on Substack ↗
+          </a>
+          <a href="/#articles" class="ip-btn ip-btn-ghost">← Back to Writing</a>
+        </div>
+      </main>
+
+      <footer class="ip-wrap" style="padding:28px 24px; border-top:1px solid var(--line);">
+        <span style="font-family:var(--font-mono); font-size:11px; color:var(--faint);">
+          © 2026 Ibrahim Nasaruddin
+        </span>
+      </footer>
+
+    </div>
+  </body>
+</html>

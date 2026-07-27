@@ -102,8 +102,8 @@ export default function Portfolio({ articles = [] }) {
   }, []);
 
   const isDark = theme === "dark";
-  const axisColor = isDark ? "#618078" : "#769FB6";
-  const gridColor = isDark ? "rgba(255,255,255,.06)" : "rgba(10,26,32,.08)";
+  const axisColor = isDark ? "#555555" : "#A0A0A0";
+  const gridColor = isDark ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.05)";
 
   const open = useCallback((href) => {
     if (!href) return;
@@ -139,12 +139,6 @@ export default function Portfolio({ articles = [] }) {
 
       {/* hero */}
       <header className="ip-wrap ip-hero" data-section="hero" data-section-order="1">
-        <div className="ip-shapes" aria-hidden="true">
-          <span className="ip-shape s1" />
-          <span className="ip-shape s2" />
-          <span className="ip-shape s3" />
-          <span className="ip-shape s4" />
-        </div>
         <div className="ip-hero-inner ip-rev in">
           <div className="ip-eyebrow">Sport Analytics · Singapore</div>
           <h1 className="ip-h1">Ibrahim<br />Nasaruddin</h1>
@@ -179,69 +173,68 @@ export default function Portfolio({ articles = [] }) {
         </div>
       </header>
 
-      {/* chart band */}
-      <section className="ip-wrap ip-chartband">
-        <div className="ip-panel ip-rev">
-          <div className="ip-panel-head">
-            <div className="ip-panel-title">Project index · by domain</div>
-            <div className="ip-legend">
-              {series.map((s) => (
-                <span key={s.name}><i style={{ background: s.color }} />{s.name.split(" ")[0]}</span>
-              ))}
-            </div>
-          </div>
-          <div style={{ width: "100%", height: 300 }}>
-            <ResponsiveContainer>
-              <ScatterChart margin={{ top: 10, right: 16, bottom: 6, left: 6 }}>
-                <CartesianGrid stroke={gridColor} horizontal vertical={false} />
-                <XAxis
-                  type="number" dataKey="x" domain={[-0.6, 8.6]}
-                  ticks={[0, 1, 4, 5, 6, 7, 8]} tickFormatter={(v) => MONTHS[v] || ""}
-                  tick={{ fill: axisColor, fontSize: 10, fontFamily: "IBM Plex Mono" }}
-                  axisLine={{ stroke: gridColor }} tickLine={false} interval={0}
-                />
-                <YAxis
-                  type="number" dataKey="y" domain={[-0.6, 2.6]}
-                  ticks={[0, 1, 2]} tickFormatter={(v) => LANES[v] || ""}
-                  tick={{ fill: axisColor, fontSize: 9.5, fontFamily: "IBM Plex Mono" }}
-                  axisLine={false} tickLine={false} width={66}
-                />
-                <ZAxis range={[140, 140]} />
-                <Tooltip content={<ChartTip />} cursor={{ stroke: axisColor, strokeDasharray: "3 3" }} />
-                {series.map((s) => (
-                  <Scatter
-                    key={s.name} name={s.name} data={s.data} fill={s.color}
-                    onClick={(pt) => {
-                      if (pt) {
-                        track("project_click", {
-                          project_name: pt.title,
-                          project_slug: pt.id,
-                          project_category: pt.primary,
-                          location: "hero_chart",
-                          outbound: true,
-                        });
-                      }
-                      open(pt && pt.href);
-                    }}
-                    style={{ cursor: "pointer" }}
-                  />
-                ))}
-              </ScatterChart>
-            </ResponsiveContainer>
-          </div>
-          <div className="ip-mono" style={{ fontSize: 10, color: "var(--faint)", padding: "0 6px 10px" }}>
-            <Terminal size={11} style={{ verticalAlign: "-1px", marginRight: 5 }} />
-            hover a point for detail · click to open the project
-          </div>
-        </div>
-      </section>
-
       {/* work */}
       <section id="work" className="ip-wrap ip-sec" data-section="work" data-section-order="2">
         <div className="ip-sec-head ip-rev">
           <span className="ip-sec-idx">01</span>
           <span className="ip-sec-title">Selected work</span>
           <span className="ip-sec-line" />
+        </div>
+
+        <div className="ip-work-chart">
+          <div className="ip-panel ip-rev">
+            <div className="ip-panel-head">
+              <div className="ip-panel-title">Project index · by domain</div>
+              <div className="ip-legend">
+                {series.map((s) => (
+                  <span key={s.name}><i style={{ background: s.color }} />{s.name.split(" ")[0]}</span>
+                ))}
+              </div>
+            </div>
+            <div style={{ width: "100%", height: 280 }}>
+              <ResponsiveContainer>
+                <ScatterChart margin={{ top: 10, right: 16, bottom: 6, left: 6 }}>
+                  <CartesianGrid stroke={gridColor} horizontal vertical={false} />
+                  <XAxis
+                    type="number" dataKey="x" domain={[-0.6, 8.6]}
+                    ticks={[0, 1, 4, 5, 6, 7, 8]} tickFormatter={(v) => MONTHS[v] || ""}
+                    tick={{ fill: axisColor, fontSize: 10, fontFamily: "IBM Plex Mono" }}
+                    axisLine={{ stroke: gridColor }} tickLine={false} interval={0}
+                  />
+                  <YAxis
+                    type="number" dataKey="y" domain={[-0.6, 2.6]}
+                    ticks={[0, 1, 2]} tickFormatter={(v) => LANES[v] || ""}
+                    tick={{ fill: axisColor, fontSize: 9.5, fontFamily: "IBM Plex Mono" }}
+                    axisLine={false} tickLine={false} width={66}
+                  />
+                  <ZAxis range={[140, 140]} />
+                  <Tooltip content={<ChartTip />} cursor={{ stroke: axisColor, strokeDasharray: "3 3" }} />
+                  {series.map((s) => (
+                    <Scatter
+                      key={s.name} name={s.name} data={s.data} fill={s.color}
+                      onClick={(pt) => {
+                        if (pt) {
+                          track("project_click", {
+                            project_name: pt.title,
+                            project_slug: pt.id,
+                            project_category: pt.primary,
+                            location: "work_chart",
+                            outbound: true,
+                          });
+                        }
+                        open(pt && pt.href);
+                      }}
+                      style={{ cursor: "pointer" }}
+                    />
+                  ))}
+                </ScatterChart>
+              </ResponsiveContainer>
+            </div>
+            <div className="ip-mono" style={{ fontSize: 10, color: "var(--faint)", padding: "0 6px 10px" }}>
+              <Terminal size={11} style={{ verticalAlign: "-1px", marginRight: 5 }} />
+              hover a point for detail · click to open the project
+            </div>
+          </div>
         </div>
 
         {featured.map((p, i) => (

@@ -30,14 +30,6 @@ export const PROJECTS = [
     embed: "https://spl-dashboard-2025-26-season.streamlit.app/?embed=true", demoLabel: "spl-dashboard.streamlit.app",
   },
   {
-    id: "spl-early", title: "SPL Early-Season Analysis",
-    date: "Jan 2026", x: 7, lane: 2, primary: "Football & SPL",
-    domains: ["Football & SPL", "Writing"],
-    blurb: "Visual rank comparisons of chance-creation and goal threat to surface early standouts and underperformers across the league.",
-    tags: ["R", "ggplot2"],
-    href: "https://twitter.com/Ibranalytics/status/2011619287321256221", cta: "View on X",
-  },
-  {
     id: "survival", title: "Survival Analysis for Injury Risk",
     date: "Jan 2026", x: 7, lane: 1, primary: "Methods & ML",
     domains: ["Methods & ML"],
@@ -137,10 +129,8 @@ export const GALLERY = [
   { title: "Netball Performance Dashboard", cat: "Dashboard", iconName: "BarChart3", caption: "R Shiny · pass networks & momentum tracking", img: null },
   { title: "Expected Threat (xT) surface", cat: "Model viz", iconName: "Radar", caption: "Random-forest xT mapped across the pitch", img: "/images/actual_vs_predicted_xT_article.png" },
   { title: "Best Defender — SPL 24/25", cat: "Visualisation", iconName: "BarChart3", caption: "ggplot2 duel & error ranking charts", img: "/images/SPL_Defenders_article.jpg" },
-  { title: "SPL Early-Season Analysis", cat: "Visualisation", iconName: "LineChart", caption: "Chance-creation & goal-threat rank plots", img: null },
   { title: "Survival Analysis — Injury Risk", cat: "Model viz", iconName: "LineChart", caption: "Kaplan-Meier & Cox proportional-hazard curves", img: "/images/survival_curve_example.png" },
   { title: "Race Analysis — 2025 SEA Games", cat: "Video", iconName: "Video", caption: "Real-time athletics race breakdowns (HPSI)", img: null },
-  { title: "KiraKit — Load Monitoring", cat: "App", iconName: "LineChart", caption: "Foster sRPE with EWMA load trend & ACWR", img: null },
 ];
 
 export const NAV = [

@@ -128,7 +128,7 @@ export default function Portfolio({ articles = [] }) {
           <div className="ip-brand"><span className="dot" />IBRAHIM_N</div>
           <div className="ip-nav-links">
             {NAV.map((n) => (
-              <a key={n.id} href={`#${n.id}`} className="ip-nav-hide">{n.label}</a>
+              <a key={n.id} href={n.href ?? `#${n.id}`} className="ip-nav-hide">{n.label}</a>
             ))}
             <button className="ip-toggle" onClick={() => setTheme(isDark ? "light" : "dark")} aria-label="Toggle theme">
               {isDark ? <Sun size={16} /> : <Moon size={16} />}

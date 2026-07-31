@@ -138,4 +138,5 @@ export const NAV = [
   { id: "gallery", label: "Gallery" },
   { id: "articles", label: "Writing" },
   { id: "path", label: "Experience" },
+  { id: "photos", label: "Photos", href: "/photos" },
 ];
